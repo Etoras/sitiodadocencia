@@ -347,17 +347,36 @@ footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;just
       <div class="ci">
         <p>Skolor, förskolor, kulturinstitutioner, kommuner och enskilda konstnärer är välkomna att höra av sig för samarbeten, workshops och kuratoriska projekt.</p>
         <div class="process-note">Vi börjar alltid med ett samtal — för att förstå er kontext och skapa något som verkligen tillhör er plats och era människor.</div>
-        <div style="margin-top:2rem;">
-          <div class="cb">
-              <div class="cl">E-post · Allmänt</div>
-              <p class="cv" style="cursor:text;user-select:all;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:#f5f0e8;">hgj&#64;dcarbono&#46;se</p>
-            </div>
-            <div class="cb">
-              <div class="cl">E-post · KUAM</div>
-              <p class="cv" style="cursor:text;user-select:all;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:#f5f0e8;">kuam&#64;dcarbono&#46;se</p>
-              <div class="cs">Workshops för skolor &amp; förskolor</div>
-            </div>
-        </div>
+
+        <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="margin-top:2rem;">
+          <input type="hidden" name="form-name" value="kontakt">
+          <p style="display:none;"><input name="bot-field"></p>
+
+          <div style="margin-bottom:1.2rem;">
+            <label style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:#D85A30;display:block;margin-bottom:0.4rem;">Ditt namn</label>
+            <input type="text" name="namn" required
+              style="width:100%;background:transparent;border:none;border-bottom:0.5px solid #3a3830;padding:0.6rem 0;font-family:'Cormorant Garamond',serif;font-size:18px;color:#f5f0e8;outline:none;">
+          </div>
+
+          <div style="margin-bottom:1.2rem;">
+            <label style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:#D85A30;display:block;margin-bottom:0.4rem;">Din e-post</label>
+            <input type="email" name="epost" required
+              style="width:100%;background:transparent;border:none;border-bottom:0.5px solid #3a3830;padding:0.6rem 0;font-family:'Cormorant Garamond',serif;font-size:18px;color:#f5f0e8;outline:none;">
+          </div>
+
+          <div style="margin-bottom:1.8rem;">
+            <label style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:#D85A30;display:block;margin-bottom:0.4rem;">Ditt meddelande</label>
+            <textarea name="meddelande" rows="4" required
+              style="width:100%;background:transparent;border:none;border-bottom:0.5px solid #3a3830;padding:0.6rem 0;font-family:'Cormorant Garamond',serif;font-size:18px;color:#f5f0e8;outline:none;resize:none;"></textarea>
+          </div>
+
+          <button type="submit"
+            style="background:transparent;border:0.5px solid #D85A30;color:#D85A30;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;padding:0.9rem 2.5rem;cursor:pointer;transition:all 0.2s;"
+            onmouseover="this.style.background='#D85A30';this.style.color='#0e0d0b';"
+            onmouseout="this.style.background='transparent';this.style.color='#D85A30';">
+            Skicka meddelande
+          </button>
+        </form>
       </div>
       <div>
         <div class="cb">
