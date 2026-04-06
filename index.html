@@ -348,9 +348,7 @@ footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;just
         <p>Skolor, förskolor, kulturinstitutioner, kommuner och enskilda konstnärer är välkomna att höra av sig för samarbeten, workshops och kuratoriska projekt.</p>
         <div class="process-note">Vi börjar alltid med ett samtal — för att förstå er kontext och skapa något som verkligen tillhör er plats och era människor.</div>
 
-        <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="margin-top:2rem;">
-          <input type="hidden" name="form-name" value="kontakt">
-          <p style="display:none;"><input name="bot-field"></p>
+        <form action="https://formspree.io/f/mojprvyy" method="POST" style="margin-top:2rem;">
 
           <div style="margin-bottom:1.2rem;">
             <label style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:#D85A30;display:block;margin-bottom:0.4rem;">Ditt namn</label>
@@ -360,13 +358,13 @@ footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;just
 
           <div style="margin-bottom:1.2rem;">
             <label style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:#D85A30;display:block;margin-bottom:0.4rem;">Din e-post</label>
-            <input type="email" name="epost" required
+            <input type="email" name="email" required
               style="width:100%;background:transparent;border:none;border-bottom:0.5px solid #3a3830;padding:0.6rem 0;font-family:'Cormorant Garamond',serif;font-size:18px;color:#f5f0e8;outline:none;">
           </div>
 
           <div style="margin-bottom:1.8rem;">
             <label style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:#D85A30;display:block;margin-bottom:0.4rem;">Ditt meddelande</label>
-            <textarea name="meddelande" rows="4" required
+            <textarea name="message" rows="4" required
               style="width:100%;background:transparent;border:none;border-bottom:0.5px solid #3a3830;padding:0.6rem 0;font-family:'Cormorant Garamond',serif;font-size:18px;color:#f5f0e8;outline:none;resize:none;"></textarea>
           </div>
 
