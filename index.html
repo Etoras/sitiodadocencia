@@ -112,7 +112,29 @@ footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;just
   .fm{text-align:left;}
   .dl{margin:0 1.5rem;}
   .langs{padding:2rem 1.5rem;}
+  .k-rounds{grid-template-columns:1fr;}
+  .k-foot{flex-direction:column;gap:0.4rem;}
 }
+/* KUAM — kampanj / levande verkstad */
+#kuam .sec{padding-top:5.5rem;padding-bottom:5.5rem;}
+.k-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2rem;}
+.k-chip{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);border:0.5px solid var(--faint);padding:5px 11px;}
+.k-lead{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(19px,2.6vw,28px);line-height:1.5;color:var(--warm);max-width:26ch;margin-bottom:0.6rem;}
+.k-lead em{color:var(--terra);}
+.k-place{font-size:14px;line-height:1.8;color:var(--muted);max-width:60ch;margin-bottom:2.6rem;}
+.k-place strong{color:var(--warm);font-weight:400;}
+.k-rounds{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2.4rem;}
+.k-round{background:rgba(58,56,48,0.3);border-left:1.5px solid var(--terra-dark);padding:1.3rem 1.4rem;}
+.k-round-h{font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--terra);margin-bottom:1.1rem;}
+.k-month{margin-top:1.1rem;}
+.k-month:first-of-type{margin-top:0;}
+.k-month b{display:block;font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:400;color:var(--warm);margin-bottom:0.2rem;}
+.k-month span{font-size:13px;color:var(--muted);line-height:1.65;}
+.k-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2rem;}
+.pill.k-on{background:var(--terra);color:var(--black);border-color:var(--terra);}
+.k-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.6rem;border-top:0.5px solid var(--stone);font-size:12px;color:var(--faint);line-height:1.8;font-style:italic;}
+.k-foot a{color:var(--terra-light);text-decoration:none;font-style:normal;}
+.k-foot a:hover{text-decoration:underline;}
 </style>
 </head>
 <body>
@@ -123,6 +145,7 @@ footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;just
     <span>©de Carbono</span>
   </a>
   <ul class="nl">
+    <li><a href="#kuam">KUAM</a></li>
     <li><a href="#quien">Om HGJ</a></li>
     <li><a href="#erbjudande">Erbjudande</a></li>
     <li><a href="#plattformar">Plattformar</a></li>
@@ -157,6 +180,48 @@ footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;just
     <span class="mq-i">·</span>
     <span class="mq-i">A Docência de Carbono não pode ser neutra</span>
     <span class="mq-i">·</span>
+  </div>
+</div>
+
+<div id="kuam">
+  <div class="sec">
+    <div class="eye">Levande verkstad · Kvilletorget 17 · Hisingen</div>
+    <div class="stitle"><em>KUAM</em> — Kreativ utveckling för alla människor</div>
+
+    <div class="k-chips">
+      <span class="k-chip">Kostnadsfri</span>
+      <span class="k-chip">Drop-in</span>
+      <span class="k-chip">Ingen åldersgräns</span>
+      <span class="k-chip">Ingen förkunskap</span>
+    </div>
+
+    <div class="k-lead">Konstnärliga workshops <em>öppna för alla åldrar</em> — bild, musik, språk, kropp, plats, material.</div>
+    <div class="k-place">En öppen verkstad mitt i staden — <strong>Kvilletorget 17, Hisingen · Göteborg</strong>. Kontinuerlig dokumentation, gemensam reflektion, ingen obligatorisk närvaro.</div>
+
+    <div class="k-rounds">
+      <div class="k-round">
+        <div class="k-round-h">Omgång 1 · sommar 2026</div>
+        <div class="k-month"><b>Juni</b><span>Ons 17, 24 · kl 18–20<br>Lör 27 · kl 11–13</span></div>
+        <div class="k-month"><b>Juli</b><span>Ons 1, 8 · kl 18–20<br>Lör 11 · kl 11–13</span></div>
+      </div>
+      <div class="k-round">
+        <div class="k-round-h">Omgång 2 · höst 2026</div>
+        <div class="k-month"><b>Augusti</b><span>Ons 19, 26 · kl 18–20<br>Lör 29 · kl 11–13</span></div>
+        <div class="k-month"><b>September</b><span>Ons 2, 9 · kl 18–20<br>Lör 12 · kl 11–13</span></div>
+      </div>
+    </div>
+
+    <div class="k-tags">
+      <span class="pill k-on">Gratis &amp; drop-in</span>
+      <span class="pill">Processbaserad</span>
+      <span class="pill">Inkluderande</span>
+      <span class="pill">Reflexiv</span>
+    </div>
+
+    <div class="k-foot">
+      <span>I samarbete med Fastighetsägare Centrala Hisingen (FCH)</span>
+      <span><a href="mailto:kuam@dcarbono.se">kuam@dcarbono.se</a> · +46 (0)733 00 37 37</span>
+    </div>
   </div>
 </div>
 
